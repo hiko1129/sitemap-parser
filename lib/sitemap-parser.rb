@@ -14,7 +14,7 @@ class SitemapParser
     url_regex: nil
   }.freeze
 
-  DEFLATE_TYPE_REGEX = %r{application/((x-)?gzip|octet-stream)}.freeze
+  DEFLATE_TYPE_REGEX = %r{(application/((x-)?gzip|octet-stream)|binary/octet-stream)}.freeze
 
   def initialize(url, opts = {})
     @url = url
